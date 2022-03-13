@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Agence Catherine Nabokov – Les collaborateur·ice·s
+{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+	{# LES COLLABORATEURS #}
+	<main class="bg-grey">
+		<div class="row fluid">
+			{# LES COLLABORATEURS - TITRE #}
+			<div class="bookshelf large">
+				<div class="bookshelf__top">
+					<div class="books ml-xs">
+						<div class="book bg-blue"></div>
+						<div class="book bg-blue"></div>
+						<div class="book fall left small bg-white"></div>
+					</div>
+					<h2 class="title color-blue">collaborateur·ice·s</h2>
+				</div>
+				<div class="bookshelf__bottom bg-blue"></div>
+			</div>
+		</div>
+
+		{# LES COLLABORATEURS – GALERIE #}
+		<div class="row fluid no-padding-top container gallery">
+			{% for collaborator in collaborators %}
+				<div class="gallery-element col">
+					<div class="gallery-link" id="gallery-{{ collaborator.id }}">
+						{% if collaborator.imageName is defined and collaborator.imageName is not empty %}
+							<a href="#"><div style="background-image: url({{ vich_uploader_asset(collaborator, 'imageFile') | imagine_filter('grayscale') }});"></div></a>
+						{% else %}
+							<a href="#" style="background-image: url({{ asset('images/authors/author_default.jpg') }})"></a>
+						{% endif %}
+						<div class="gallery-filter"></div>
+					</div>
+					{% if collaborator.name is defined and collaborator.name is not empty %}
+						<h3>{{ collaborator.name }}</h3>
+					{% else %}
+						<h3>{{ collaborator.firstName }} {{ collaborator.lastName }}</h3>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+
+		{# LES COLLABORATEURS – BOX DÉTAIL #}
+		<div id="gallery-detail-mask"></div>
+        <div id="gallery-detail" class="closed">
+            <div id="gallery-close">
+               <img src="{{ asset('images/icon/close.png') }}" title="Fermer la fenêtre" alt="Icône pour fermer la fenêtre">
+            </div>
+
+            {% for collaborator in collaborators %}
+                <div id="gallery-infos-{{ collaborator.id }}" class="gallery-infos">
+					{% if collaborator.name is defined and collaborator.name is not empty %}
+						<h4>{{ collaborator.name }}</h4>
+					{% else %}
+						<h4>{{ collaborator.firstName }} {{ collaborator.lastName }}</h4>
+					{% endif %}
+                    <hr>
+                    {{ collaborator.biography|raw }}
+                    <hr>
+					{% if collaborator.link is defined and collaborator.link is not empty %}
+					<ul class="collaborator-link">
+						<li>
+							<a href="{{ collaborator.link }}" target="_blank">{{ collaborator.linkType }}</a>
+						</li>
+					</ul>
+					{% endif %}
+                </div>
+            {% endfor %}
+        </div>	
+	</main>
+	
+{% endblock %}

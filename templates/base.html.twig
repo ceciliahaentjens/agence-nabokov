@@ -13,10 +13,10 @@
     <body>
         {# Navbar #}
         <nav class="fixed desktop">
-            <a href="{{path('index')}}" title="L'agence" alt="l'agence">l'agence</a>
+            <a href="{{ path('index') }}" title="L'agence" alt="l'agence">l'agence</a>
             <a href="" title="Découvrir les auteur·ice·s" alt="auteur·ice·s">auteur·ice·s</a>
-            <a href="" title="Les collaborateur·ice·s de l'agence" alt="collaborateur·ice·s">collaborateur·ice·s</a>
-            <a href="{{path('manuscripts')}}" title="Envoyer un manuscrit" alt="envoi de manuscrits">envoi de manuscrits</a>
+            <a href="{{ path('collaborator.index') }}"title="Les collaborateur·ice·s de l'agence" alt="collaborateur·ice·s">collaborateur·ice·s</a>
+            <a href="{{ path('manuscripts') }}" title="Envoyer un manuscrit" alt="envoi de manuscrits">envoi de manuscrits</a>
             <a href="" title="Contacter l'agence" alt="contact">contact</a>
             <div>
                 <a class="mr-xxs" href="https://www.instagram.com/agencenabokov/" target="_blank"><img src="{{ asset('medias/icons/instagram-dark.png') }}"></a>

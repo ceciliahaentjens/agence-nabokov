@@ -26,3 +26,6 @@ Create a new website for the young litterary agency «&nbsp;Catherine Nabokov&nb
 ## PACKAGES INFO
 - sass-loader (https://symfony.com/doc/4.4/frontend/encore/simple-example.html#using-sass-less-stylus)
 - rfs (https://www.npmjs.com/package/rfs)
+- slugify ()
+- vich uploader (https://github.com/dustin10/VichUploaderBundle)
+- liip imagine (https://github.com/liip/LiipImagineBundle)
