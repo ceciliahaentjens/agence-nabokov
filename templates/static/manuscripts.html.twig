@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Envoi de manuscrits
+{% endblock %}
+
+{% block stylesheets %}
+	
+{% endblock %}
+
+{% block body %}
+<main class="bg-gold">
+	<div class="row">
+		<div class="col top">
+			{# ENVOI DE MANUSCRITS - TITRE #}
+			<div class="bookshelf mb-s">
+				<div class="bookshelf__top justify-between">
+					<div class="books ml-xs">
+						<div class="book small fall right bg-white"></div>
+						<div class="book bg-blue"></div>
+					</div>
+					<div class="books ml-xs">
+						<div class="book bg-blue"></div>
+					</div>
+					<h2 class="title color-white">envoi de</h2>
+				</div>
+				<div class="bookshelf__bottom bg-blue"></div>
+			</div>
+
+			<div class="bookshelf manuscrits-responsive mb-m">
+				<div class="bookshelf__top">
+					<h2 class="color-white">manuscrits</h2>
+
+					<div class="books ml-xs">
+						<div class="book small fall right bg-blue"></div>
+						<div class="book small bg-blue"></div>
+						<div class="book bg-white"></div>
+					</div>							
+				</div>
+				<div class="bookshelf__bottom bg-blue"></div>
+			</div>
+
+			{# ENVOI DE MANUSCRITS - TEXTE #}
+			<p class="center">Tous les manuscrits adressés à l’agence sont lus. <strong>Le délai de lecture est d’environ deux mois</strong>. Si un texte nous intéresse, nous vous contacterons rapidement. Si vous n’avez pas de réponse sous trois mois, vous pouvez considérer que votre manuscrit n’est pas retenu.<br>
+			<br>
+			Nous ne lisons que les <strong>textes en français</strong>, principalement en <strong>fiction et non-fiction</strong> (pas de poésie, théâtre, essais de sciences humaines, livres illustrés, livres pratiques, textes pour la jeunesse et scénarios).</p>
+		</div>
+
+		<div class="col right bottom">
+			 <div class="bookshelf small mt-m mb-s order-2">
+				<div class="bookshelf__top center">
+					<div class="books ml-xs">
+						<div class="book bg-white"></div>
+						<div class="book bg-white"></div>
+						<div class="book bg-blue"></div>
+					</div>
+
+					<div class="books ml-xs">
+						<div class="book small bg-blue"></div>
+						<div class="book small bg-grey"></div>
+						<div class="book bg-grey"></div>
+						<div class="book bg-white"></div>
+					</div>							
+				</div>
+
+				<div class="bookshelf__bottom bg-blue"></div>
+			</div>
+
+			<div class="bookshelf manuscrits-desktop mb-s">
+				<div class="bookshelf__top">
+					<h2 class="color-white">manuscrits</h2>
+
+					<div class="books ml-xs">
+						<div class="book small fall right bg-blue"></div>
+						<div class="book small bg-blue"></div>
+						<div class="book bg-white"></div>
+					</div>							
+				</div>
+				<div class="bookshelf__bottom bg-blue"></div>
+			</div>
+
+			{# ENVOI DE MANUSCRITS - TEXTE #}
+			<p class="center small order-1">Merci d’envoyer votre manuscrit par mail, au format Word ou PDF, avec un descriptif de quelques lignes à <a class="color-white" href="mailto:contact@agencenabokov.com">contact@agencenabokov.com</a>. Les manuscrits envoyés par la poste ne sont pas acceptés.</p>
+		</div>
+	</div>
+</main>
+{% endblock %}

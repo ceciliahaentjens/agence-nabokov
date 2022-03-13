@@ -6,7 +6,7 @@
 		<meta name="keywords" content="agence, agent, agent littéraire, agence littéraire, catherine nabokov, nabokov, publication, manuscrits, éditeur, édition, maison d'édition, romans, littérature, littérature francophone, littérature français, auteurs français" />
         <meta property="og:image" content="https://agencenabokov.com/images/catherine-nabokov-social.jpg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Agence Catherine Nabokov {% block title %}{% endblock %}</title>
+        <title>Agence Catherine Nabokov – {% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('build/app.css') }}">
         <link rel="icon" type="image/png" href="{{ asset('medias/icons/favicon.png') }}" />
     </head>
@@ -16,7 +16,7 @@
             <a href="{{path('index')}}" title="L'agence" alt="l'agence">l'agence</a>
             <a href="" title="Découvrir les auteur·ice·s" alt="auteur·ice·s">auteur·ice·s</a>
             <a href="" title="Les collaborateur·ice·s de l'agence" alt="collaborateur·ice·s">collaborateur·ice·s</a>
-            <a href="" title="Envoyer un manuscrit" alt="envoi de manuscrits">envoi de manuscrits</a>
+            <a href="{{path('manuscripts')}}" title="Envoyer un manuscrit" alt="envoi de manuscrits">envoi de manuscrits</a>
             <a href="" title="Contacter l'agence" alt="contact">contact</a>
             <div>
                 <a class="mr-xxs" href="https://www.instagram.com/agencenabokov/" target="_blank"><img src="{{ asset('medias/icons/instagram-dark.png') }}"></a>
