@@ -1,0 +1,53 @@
+// COLORS
+$colors: (
+    "blue"  :  #091741,
+    "grey"  :  #9fb0a7,
+    "gold"  :  #8c6b00,
+    "white" :  #fdf7e9
+);
+
+$blue       : #091741;
+$white      : #fdf7e9;
+$gold       :  #8c6b00;
+$grey       :  #9fb0a7;
+
+// MARGIN/PADDING
+$spacings: (
+    "none"  : 0,
+    "xxs"   : 15px,
+    "xs"    : 25px,
+    "s"     : 50px,
+    "m"     : 75px,
+    "l"     : 100px,
+    "xl"    : 150px,
+    "xxl"   : 200px
+);
+
+$margin-xxs   : 15px;
+$margin-xs    : 25px;
+$margin-s     : 50px;
+$margin-m     : 75px;
+$margin-l     : 100px;
+$margin-xl    : 150px;
+
+// BOOKSHELF
+$book-margin: 8;
+$book-width : 7;
+$book-height: 55;
+$book-small : 45;
+
+$modulo : 15;
+$book-margin-desk: $book-margin + ($modulo / 10);
+$book-width-desk : $book-width + ($modulo / 10);
+$book-height-desk: 55 + ($modulo);
+$book-small-desk : 45 + ($modulo / 2);
+
+// NAV HEIGHT
+$nav-height : 50px;
+
+// FONT FAMILY
+$regular    : "Inria";
+$bold       : "Inria Bold";
+$italic     : "Inria Italic";
+$boldital   : "Inria BoldItalic";
+$walbaum    : "Walbaum";

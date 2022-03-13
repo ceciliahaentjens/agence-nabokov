@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    
+{% endblock %}
+
+{% block body %}
+    {# L'AGENCE #}
+    <main class="bg-white">
+        {# LOGO SUR L'ACCUEIL (HEADER) #}
+        <div class="row home-logo bg-white">
+            <div>
+                <img src="{{ asset('medias/images/logo-accueil.png') }}">
+            </div>
+        </div>
+        {# ROW - AGENCE #}
+        <div id="row_agence" class="row small bg-grey pt-xl pb-m">	
+            <div class="col center">
+                {# AGENCE - TITRE #}
+                <div class="bookshelf mb-m">
+                    <div class="bookshelf__top">
+                        <div class="books horizontal ml-xxs mr-xxs">
+                            <div class="book small bg-white"></div>
+                            <div class="book bg-blue"></div>
+                            <div class="book bg-blue"></div>
+                        </div>
+                        <h2 class="title color-white">l'agence</h2>
+                    </div>
+                    <div class="bookshelf__bottom bg-blue"></div>
+                </div>
+
+                {# AGENCE - TEXTE #}
+                <p class="center">Fondée en 2020 à Paris, l’agence littéraire <strong>Catherine Nabokov</strong> accompagne et représente de nouvelles voix de la littérature. Elle se tient à côté des écrivain·e·s pendant l’écriture et la finalisation de leur texte. Elle se charge ensuite de le présenter aux maisons d’édition et de négocier le contrat.</p>
+
+            </div>
+
+            <div class="col col-2 bottom right">
+                {# AGENCE - DÉCORATION #}
+                <div class="bookshelf small mb-m mt-s">
+                    <div class="bookshelf__top">
+                        <div class="books horizontal ml-xxs mr-xxs">
+                            <div class="book small bg-white"></div>
+                            <div class="book bg-gold"></div>
+                            <div class="book bg-blue"></div>
+                        </div>
+
+                        <div class="books ml-xxs mr-xxs">
+                            <div class="book bg-gold"></div>
+                            <div class="book small bg-white"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="bookshelf__bottom bg-blue"></div>
+                </div>
+
+                <div class="bookshelf">
+                    <div class="bookshelf__top between">
+                        <div class="books horizontal ml-xxs mr-xxs">
+                            <div class="book bg-blue"></div>
+                            <div class="book bg-blue"></div>
+                        </div>
+
+                        <div class="books ml-xxs mr-xxs">
+                            <div class="book fall right bg-gold"></div>
+                            <div class="book small bg-white"></div>
+                            <div class="book small bg-white"></div>
+                        </div>
+
+                        <div class="books horizontal ml-xxs mr-xxs">
+                            <div class="book small bg-gold"></div>
+                            <div class="book bg-blue"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="bookshelf__bottom bg-blue"></div>
+                </div>
+
+            </div>
+        </div>
+
+        {# ROW – BIOGRAPHIE #}
+        <div class="row small bg-grey pt-s pb-none">
+            <div class="col order-2">
+                {# BIOGRAPHIE - DÉCORATION #}
+                <div class="bookshelf small mt-s">
+                    <div class="bookshelf__top right">
+                        <div class="books ml-xxs mr-xxs">
+                            <div class="book fall right bg-white"></div>
+                            <div class="book bg-blue"></div>
+                            <div class="book small bg-white"></div>
+                            <div class="book small bg-gold"></div>
+                        </div>							
+                    </div>
+                    <div class="bookshelf__bottom bg-blue"></div>
+                </div>
+
+                <figure class="bio_img mt-s">
+                    <img src="{{ asset('medias/images/catherine-nabokov.png') }}" title="Catherine Nabokov" alt="Catherine Nabokov">
+                </figure>
+            </div>
+
+            <div class="col order-1">
+                {# BIOGRAPHIE - TEXTE #}
+                <p class="center">Après avoir étudié la littérature russe, Catherine Nabokov a commencé très tôt à travailler dans l’édition. Elle a fait ses premiers pas chez Christian Bourgois Éditeur avant d’être, pendant vingt ans, éditrice en littérature française et en non-fiction dans différentes maisons, telles Stock ou Le Seuil. Devenue éditrice indépendante, elle a publié plusieurs premiers romans, dont <i>Petit pays</i> de Gaël Faye en 2016 (prix Fnac et prix Goncourt des lycéens). Ce long compagnonnage avec les écrivain·e·s, ces années passées à les écouter, les aiguiller, les conseiller, les lire et les relire, l’a poussée à créer, en 2020, l’agence Catherine Nabokov.</p>
+            </div>
+        </div>
+    </main>
+{% endblock %}

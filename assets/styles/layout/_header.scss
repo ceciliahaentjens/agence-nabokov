@@ -1,0 +1,13 @@
+.row.home-logo {
+    align-items: center;
+    justify-content: center;
+
+    > div {
+        max-width: 550px;
+        width: 80%;
+
+        > img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+// RESPONSIVE FRONT-END FOR DESKTOP (> 1200px)
+@media screen and (min-width: 1200px) {
+    .row {
+        flex-direction: row;
+
+        .col {
+            p {
+                width: 70%;
+            }
+        }
+
+        &.gallery {
+            flex-wrap: wrap;
+
+            .col { width: 25%; }
+        }
+    }
+
+    .container {
+        max-width: 1180px;
+    }
+
+    #gallery {
+        &-detail {
+            max-width: 650px;
+            width: 50vw;
+
+            &.closed { right: -50vw; }
+        }
+    }
+
+    .bookshelf {
+        max-width: 400px;
+        
+        &.large { max-width: 550px; }
+        &.small { max-width: 250px; }
+    }
+
+    p { font-size: 1.15rem; }
+}

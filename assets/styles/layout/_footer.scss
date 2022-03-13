@@ -1,0 +1,50 @@
+footer {
+    @include font-size(0.8rem);
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        > div {
+            margin: 15px 0;
+
+            > a {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .footer__social {
+        a { border: none; }
+
+        img {
+            width: 25px;
+        }
+    }
+
+    p,
+    a,
+    span {
+        color: #fdf7e9;
+    }
+
+    a { font-family: $walbaum; }
+
+    .mention {
+        padding: 10px;
+
+        > span {
+            font-family: $italic;
+            font-size: 0.75em;
+            text-align: center;
+        }
+    }
+}

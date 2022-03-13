@@ -1,0 +1,19 @@
+.error-page {
+    min-height: 100vh;
+    
+    &-message {
+        margin: 0 auto;
+        padding: 0 !important;
+        max-width: 500px;
+        text-align: center;
+        width: 50%;
+
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .row.right {
+        justify-content: flex-end;
+    }
+}

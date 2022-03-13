@@ -1,0 +1,13 @@
+// RESPONSIVE FRONT-END FOR PHONE LANDSCAPE (> 576px)
+@media screen and (min-width: 576px) {
+    // HOME LOGO
+    .row.home-logo {
+        > div {
+            width: 40%;
+        }
+    }
+
+    .container {
+        max-width: 540px;
+    }
+}

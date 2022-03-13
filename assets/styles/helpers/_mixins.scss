@@ -1,0 +1,4 @@
+@mixin box-shadow($sizeY, $color, $alpha, $sizeX : 0, $blur : 15px,) {
+    $rgba: rgba($color, $alpha/100);
+    box-shadow: $sizeY $sizeX $blur $rgba;
+}

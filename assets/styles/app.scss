@@ -1,0 +1,80 @@
+// RFS MODULE (Responsive font-size)
+@import "../../node_modules/rfs/scss.scss";
+// BASE
+@import "base/reset";
+@import "base/typography";
+// HELPERS
+@import "helpers/variables";
+@import "helpers/colors";
+@import "helpers/mixins";
+// LAYOUT
+@import "layout/grid";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+// COMPONENTS
+@import "components/buttons";
+@import "components/alert";
+@import "components/bookshelf";
+@import "components/form";
+// PAGES
+@import "pages/index";
+@import "pages/gallery";
+@import "pages/mentions";
+@import "pages/error";
+// RESPONSIVE
+@import "responsive/576";
+@import "responsive/768";
+@import "responsive/992";
+@import "responsive/1200";
+
+*,
+html,
+body {
+    font-family: $regular, sans-serif;
+}
+
+h2 {
+    font-family: $walbaum, serif;
+    line-height: 1.65rem;
+    font-size: 2rem;
+}
+
+h3 {
+    @include font-size(1.1rem);
+}
+
+h4 {
+    font-family: $walbaum, serif;
+    @include font-size(1.8rem);
+}
+
+p,
+li {
+    line-height: 1.6em;
+
+    strong,
+    b {
+        font-family: $bold, sans-serif;
+    }
+
+    em,
+    i {
+        font-family: $italic, sans-serif;
+    }
+
+    u {
+        text-decoration: none;
+        border-bottom: solid 1px $blue;
+    }
+
+    a {
+        border-bottom: solid 1px $gold;
+        color: $gold;
+    }
+
+    em > strong,
+    strong > em {
+        font-family: $boldital, sans-serif;
+    }
+}

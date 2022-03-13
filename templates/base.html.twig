@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fondée en 2020 à Paris, l’agence littéraire Catherine Nabokov accompagne et représente les nouvelles voix de la littérature. Elle se tient aux côtés des écrivain·e·s pendant l’écriture et la finalisation de leur texte." />
+		<meta name="keywords" content="agence, agent, agent littéraire, agence littéraire, catherine nabokov, nabokov, publication, manuscrits, éditeur, édition, maison d'édition, romans, littérature, littérature francophone, littérature français, auteurs français" />
+        <meta property="og:image" content="https://agencenabokov.com/images/catherine-nabokov-social.jpg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agence Catherine Nabokov {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+        <link rel="icon" type="image/png" href="{{ asset('medias/icons/favicon.png') }}" />
+    </head>
+    <body>
+        {# Navbar #}
+        <nav class="fixed desktop">
+            <a href="{{path('index')}}" title="L'agence" alt="l'agence">l'agence</a>
+            <a href="" title="Découvrir les auteur·ice·s" alt="auteur·ice·s">auteur·ice·s</a>
+            <a href="" title="Les collaborateur·ice·s de l'agence" alt="collaborateur·ice·s">collaborateur·ice·s</a>
+            <a href="" title="Envoyer un manuscrit" alt="envoi de manuscrits">envoi de manuscrits</a>
+            <a href="" title="Contacter l'agence" alt="contact">contact</a>
+            <div>
+                <a class="mr-xxs" href="https://www.instagram.com/agencenabokov/" target="_blank"><img src="{{ asset('medias/icons/instagram-dark.png') }}"></a>
+                <a href="https://www.facebook.com/agencenabokov/" target="_blank"><img src="{{ asset('medias/icons/facebook-dark.png') }}"></a>
+            </div>
+        </nav>
+
+        {# Navbar - Responsive #}
+        <nav class="responsive pt-m pb-m">
+            <a href="{{path('index')}}" title="L'agence" alt="l'agence">l'agence</a>
+            <a href="" title="Découvrir les auteur·ice·s" alt="auteur·ice·s">auteur·ice·s</a>
+            <a href="" title="Les collaborateur·ice·s de l'agence" alt="collaborateur·ice·s">collaborateur·ice·s</a>
+            <a href="" title="Envoyer un manuscrit" alt="envoi de manuscrits">envoi de manuscrits</a>
+            <a href="" title="Contacter l'agence" alt="contact">contact</a>
+            <div>
+                <a class="mr-xxs" href="https://www.instagram.com/agencenabokov/" target="_blank"><img src="{{ asset('images/icon/logo-instagram.png') }}"></a>
+                <a href="https://www.facebook.com/agencenabokov/" target="_blank"><img src="{{ asset('images/icon/logo-facebook.png') }}"></a>
+            </div>
+        </nav>
+        <div class="nav-btn">
+            <div class="nav-btn-burger"></div>
+        </div>
+        
+        {% block body %}{% endblock %}
+
+        {# Footer  #}
+        <footer class="bg-blue">	
+            <div class="container pt-s pb-s">
+                <div>	
+                    <img height="100px" src="{{ asset('medias/images/logo-footer.png') }}">
+                </div>
+                <div>
+                    <a class="footer__email" href="mailto:contact@agencenabokov.com">contact@agencenabokov</a>
+                    <div class="footer__social">
+                        <a class="mr-xs" href="https://www.instagram.com/agencenabokov/" target="_blank"><img src="{{ asset('medias/icons/instagram-light.png') }}"></a>
+                        <a href="https://www.facebook.com/agencenabokov/" target="_blank"><img src="{{ asset('medias/icons/facebook-light.png') }}"></a>
+                    </div>
+                </div>
+                <div>
+                    <a href="{{path('mentions')}}">mentions légales</a>
+                    <span>2021 · agence Catherine Nabokov</span>
+                </div>
+            </div>
+            <div class="mention bg-blue pb-xxs">
+                <span>– identité visuelle et site internet&nbsp;: Maud Grelier & Cécilia Haentjens</span>
+            </div>
+        </footer>
+
+        {% block javascripts %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </body>
+</html>
